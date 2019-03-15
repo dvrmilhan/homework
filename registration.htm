@@ -1,0 +1,99 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+    <head>
+        
+        <meta charset="utf-8">
+        <title> Registration </title>
+
+    </head>
+    
+    <body>
+            <nav>
+                <h2><a href="registration.htm"><u>REGISTER</u></a></h2>
+                <a href="index.html"><u>HOMEPAGE|</u></a>
+                <a href="film.html"><u>  FILMS |</u></a>
+                <a href="books.html"><u>BOOKS | </u></a>
+                <a href="musics.html"><u>MUSICS |</u></a>
+                <a href="usefulllink.html"><u>USEFUL LINKS |</u></a>
+                <a href="contactme.htm"><u> CONTACT ME|</u></a>
+            </nav>
+    
+        <form>
+
+                <label for="name, surname">Name (Middle Name) Surname:</label>
+                <input type="text"  id="name,surname"> <br/><br/>
+                
+                <label for="password">Password:</label>
+                <input type="password"  id="password"> <br/><br/>
+                
+                <label for="e-mail">E-Mail:</label>
+                <input type="email"  id="e-mail"> <br/><br/>
+
+                <label for="date of birth">Date Of Birth:</label>
+                <input type="date"  id="date of birth" > <br/><br/>
+            <div>                
+              <p> Departmens: </p>
+              <select name="departmens"> <b></b>
+                  <option value="hk">Archeology</option>
+                  <option value="vc">Astronomy</option>
+                  <option value="sf">Finance</option>
+                  <option value="sf">History</option>
+                  <option value="sf">Statistics</option>
+                  <option value="sf">Computer Engineering</option>
+                  <option value="sf">Nuclear Engineering</option>
+                  <option value="sf">Industry Engineering</option>                
+                </select>
+                <b></b>
+ 
+            </div>
+            
+            <div>
+                <p>Gender</p>
+                <select name="gender"> <b></b>
+                    <option value="yok"> </option>
+                    <option value="female">Female</option>
+                    <option value="male">male</option>
+                </select>
+            </div>
+            
+                <label for="issue">Issue:</label>
+                <input type="text" id="issue" > <br/><br/>                
+
+                <label for="about me">About Me:</label><textarea  rows="8" cols="20"></textarea> <br/><br/>
+        </form>       
+        
+        <form method="post" enctype="multipart/form­data"  action="test.php">
+				<p>Upload Your Photo</p>
+			    <input type="file" name="fileToUpload">
+		</form>
+        
+        <form> 
+            <label for="intrest"> Mark your intrest </label> <br/>
+                <input type="checkbox" name="viaMail" id="intrest"> Gaming<br/>
+                <input type="checkbox" name="viaPhone" value="phone" id="intrest">Comedy<br/>
+                <input type="checkbox" name="viaMail" id="intrest"> Education<br/>
+                <input type="checkbox" name="viaMail" id="intrest"> Books<br/>
+                <input type="checkbox" name="viaMail" id="intrest"> Politics<br/>
+                <input type="checkbox" name="viaMail" id="intrest"> Sports<br/>
+                <input type="checkbox" name="viaMail" id="intrest"> Music<br/>
+                <input type="checkbox" name="viaMail" id="intrest"> Films and Animation<br/>
+                
+                <input type="checkbox" name="viaMail" id="intrest"> Pets and Animals<br/>
+                <input type="checkbox" name="viaMail" id="intrest"> Series<br/>
+                
+                
+                <input type="reset" value="Reset"/>
+          
+                <input onclick= "myAlert()" type="submit" value="Send"/><br/><br/>
+        
+                <script>
+                function myAlert() {
+                alert("Thanks for regitiration!");
+                }
+                </script>
+        </form>
+
+       
+
+    </body>
+</html>
